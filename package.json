@@ -16,7 +16,8 @@
   "license": "ISC",
  "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^6.0.13"
+    "mongoose": "^6.0.13",
+    "mongodb": "^4.7.0"
   },
   "bugs": {
     "url": "https://github.com/brischster/Mongo-Backend-for-Social-Media/issues"
