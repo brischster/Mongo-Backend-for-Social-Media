@@ -39,6 +39,20 @@ module.exports = {
       });
   },
 
+  // delete a user
+  deleteUser(req, res) {
+    User.findByIdAndDelete({ _id: req.params.userId })
+      .then((user) =>
+        !user
+          ? res.status(404).json({ message: "No user found with that ID" })
+          : res.json({ message: "User has been deleted" })
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+
   // add a friend
   addFriend(req, res) {
     User.findByIdAndUpdate(
