@@ -1,6 +1,6 @@
 const { Schema, model } = require("mongoose");
 const reactionSchema = require("./Reaction");
-const userSchema = require("./User");
+// const userSchema = require("./User");
 
 const thoughtSchema = new Schema(
   {
@@ -20,12 +20,7 @@ const thoughtSchema = new Schema(
         ref: "user",
       },
     ],
-    reaction: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: "Reaction",
-      },
-    ],
+    reaction: [reactionSchema],
   },
   {
     toJSON: {
