@@ -29,13 +29,29 @@ module.exports = {
       })
       .then((user) =>
         !user
-          ? res
-              .status(404)
-              .json({
-                message:
-                  "Thought has been created, but no user found with that ID",
-              })
+          ? res.status(404).json({
+              message:
+                "Thought has been created, but no user found with that ID",
+            })
           : res.json("Created thought")
+      )
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+      });
+  },
+
+  // update thought
+  updateThought(req, res) {
+    Thought.findOneAndUpdate(
+      { _id: req.params.thoughtId },
+      { $set: req.body },
+      { new: true }
+    )
+      .then((thought) =>
+        !thought
+          ? res.status(404).json({ message: "No thought found with that ID" })
+          : res.json(thought)
       )
       .catch((err) => {
         console.log(err);
