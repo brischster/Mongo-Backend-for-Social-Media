@@ -23,12 +23,7 @@ const thoughtSchema = new Schema({
   //       ref: "user",
   //     },
   //   ],
-  //   reactions: [
-  //     {
-  //       type: Schema.Types.ObjectId,
-  //       ref: "reaction",
-  //     },
-  //   ],
+  //   reactions: [reactionSchema]
   // },
   // {
   //   toJSON: {
