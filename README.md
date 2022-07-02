@@ -21,9 +21,11 @@ With mongodb and mongoose easily make sure that you are always and fully trackin
 
 ### <ins>How to Use </ins>
 
-[Video Tutorial of how to use the program Pt.1](https://drive.google.com/file/d/1vzOPSKXozm_P-hUJ0h7gyyXrfUfoYNDm/view)
+[Video Tutorial of how to use the program Pt.1](https://drive.google.com/file/d/103SJc1fBJApBVq0tv4o9VLbWzJLdjGSu/view)
 
-[Video Tutorial Pt.2](https://drive.google.com/file/d/1D89lDLibc4efNHOE_P0LszkHJWUhTWOg/view)
+[Video Tutorial Pt.2](https://drive.google.com/file/d/18HIAhGazTcpBbA47kk7oQgKTMSD2-itr/view)
+
+[Video Tutorial Pt.3](https://drive.google.com/file/d/162EP-CGzLBNes7qrJsihWmfuy5tVFBtv/view)
 
 ### <ins>How to Contribute </ins>
 
